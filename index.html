@@ -3,73 +3,42 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Registration</title>
+  <title>John Skender</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="script.js" charset="utf-8"></script>
 </head>
 
-<style>
-  form {
-    margin: 20px auto;
-    width: 400px;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  input {
-    padding: 5px;
-    width: 150px;
-    margin-bottom: 10px;
-    display: inline-block;
-  }
-
-
-  label {
-    width: 180px;
-    clear: left;
-    text-align: right;
-    padding-right: 10px;
-  }
-
-  input,
-  label {
-    float: left;
-  }
-</style>
-
 <body>
-  <div class="registration">
-    <h2>Registration Form</h2>
-    <h2>This is form number 1!</h2>
-    <a href="Practice_2/form.html">Second Form</a>
-    <form class="" action="#" method="post">
-      <fieldset>
+  <div class="wrapper">
+    <div id="render_head">
 
-        <label for="first_name">First Name:</label>
-        <input type="text" name="first_name" required>
-        <br>
-        <label for="last_name">Last Name:</label>
-        <input type="text" name="last_name" required>
-        <br>
-        <label for="username">Username:</label>
-        <input type="text" name="username" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" placeholder="ex: johnsmith@gmail.com" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" placeholder="Enter Password" required>
-        <br>
-        <label for="password_confirmation">Confirm Password:</label>
-        <input type="password" name="password_confirmation" placeholder="Repeat Password" required>
-        <br>
+    </div>
 
-        <input type="submit" name="btn_submit" value="Submit">
-        <input type="reset" name="btn_reset" value="Reset">
+    <div class="content">
+      <div class="about">
+        <div class="container">
+          <img id="profile_pic" src="images/profile_pic.jpg" alt="Profile Picture">
+        </div>
+        <p>
+          I am a current student at Illinois State University studying Information technology: Web Development Technology. This site has been created as part of a course assignment in IT353. I will use this site to satisfy the requirements of this assignment and
+          use it to host live links for future assignments in this course.
+        </p>
 
-      </fieldset>
-    </form>
+        <p>
+          I am a senior at this University and currently commute from Peoria, Illinois. I plan on graduating in May where I will <a href="#">pursue a career</a> in Web Development Technologies. I have a passion for the industry and am always researching
+          new technologies that may help me increase my skills as a developer. I have experience with your standard from end technologies HTML5, CSS3, and Javascript/jQuery. On the backend I have built applications with C# and the .Net framework, ruby
+          and the rails framework, and am recently in the process of researching and building a simple CRUD application with node.js and express.
+        </p>
 
+        <p>
+          Outside of development I am an avid competitor in tennis, golf, and soccer. I have a passion for the outdoors and take fitness and health very seriously. I have a beautiful fiance of whom I have spent the last 8 years of my life with.
+        </p>
+
+      </div>
+    </div>
+
+    <footer class="footer"></footer>
   </div>
 </body>
 
