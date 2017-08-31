@@ -1,4 +1,4 @@
-#IT 353 - Web Application Development
+# IT 353 - Web Application Development
 
 This repository will hold all files associated with this course. 
 
