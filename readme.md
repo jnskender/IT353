@@ -10,5 +10,5 @@ I will use the website to practice skills learned in the course as well as to ho
 
 The site is hosted with github pages and can be [found here](https://jnskender.github.io/IT353/).
 
-Raw code can be found inside of the [assignments folder](github.com/jnskender/it353/assignments).
+Raw code can be found inside of the [assignments folder](https://github.com/jnskender/IT353/tree/master/assignments).
 
