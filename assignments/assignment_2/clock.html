@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Clock Demo</title>
+    <meta name="viewport"  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="author" content="Dajun"/>
+    <link rel="stylesheet" href="css/clock.css"/>
+</head>
+<body onload = "startTimer()">
+
+<div class="t2">
+    <div class="t3">
+    <center><h3 id = "timer"></h3></center>
+        <div class="t4">
+            <i class="hour hour3">3</i>
+            <i class="hour hour6">6</i>
+            <i class="hour hour9">9</i>
+            <i class="hour hour12">12</i>
+
+            <div id="second"></div>
+            <div id="minute"></div>
+            <div id="hour"></div>
+            <div id="point"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var second = document.getElementById("second");
+    var minute = document.getElementById("minute");
+    var hour = document.getElementById("hour");
+
+    var clock = setInterval(function () {
+        var nowDate = new Date();//get the time
+        var hourN = nowDate.getHours();
+        var minuteN = nowDate.getMinutes();
+        var secondN = nowDate.getSeconds();
+
+        var circleHour = hourN % 12 * 30;
+        hour.style.transform = "rotate(" + circleHour + "deg)";//convert 24 hours to 12 hours
+        minute.style.transform = "rotate(" + minuteN * 6 + "deg)";
+        second.style.transform = "rotate(" + secondN * 6 + "deg)";
+    }, 1000);
+
+    function startTimer() {
+    var time = new Date();
+    var h = time.getHours();
+    var m = time.getMinutes();
+    var s = time.getSeconds();
+    m = checkAddZero(m);
+    s = checkAddZero(s);
+    document.getElementById('timer').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+setInterval(startTimer, 1000);
+function checkAddZero(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+</body>
+</html>
