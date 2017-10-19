@@ -1,0 +1,85 @@
+body{
+ height: 540px;
+}
+
+#zombie {
+  /*Our png picture is 2000px * 312px, then each frame is 200px * 312px*/
+  width: 200px;
+  height: 312px;
+  background-image: url("../img/walkingdead.png");
+  position: relative;
+  margin: auto;
+  top: 50%;
+}
+
+#wrapper{
+  background-image: url("../img/background.png");
+  background-size: contain;
+  height: 100%;
+  position: relative;
+}
+
+.right{
+  -moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+filter: FlipH;
+-ms-filter: "FlipH";
+}
+
+.left{
+  -moz-transform: scaleX(1);
+-o-transform: scaleX(1);
+-webkit-transform: scaleX(1);
+transform: scaleX(1);
+filter: FlipH;
+-ms-filter: "FlipH";
+}
+
+
+/*
+#wrapper {
+  width: 600px;
+  height: 200px;
+  position: relative;
+  animation: move 4s infinite;
+}
+*/
+
+@keyframes plays {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -2000px;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 500px;
+    top: 0px;
+    opacity: 1;
+  }
+  25% {
+    left: 400px;
+    top: 50px;
+    opacity: 0.1;
+  }
+  50% {
+    left: 300px;
+    top: 50px;
+    opacity: 1;
+  }
+  75% {
+    left: 200px;
+    top: 0px;
+    opacity: 0.1;
+  }
+  100% {
+    left: 100px;
+    top: 50px;
+    opacity: 1;
+  }
+}
